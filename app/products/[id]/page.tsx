@@ -13,9 +13,9 @@ const ProductDetails = async ({ params }: { params: Promise<{ id: string }> }) =
     if (id === "5") {
         notFound();
     }
-    if (id == "1") {
-        throw new Error("Simulated error")
-    }
+    // if (id == "1") {
+    //     throw new Error("Simulated error")
+    // }
 
     await new Promise((res) => {
         setTimeout(() => {
